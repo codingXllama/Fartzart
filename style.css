@@ -38,15 +38,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0.35rem;
+  gap: 0.25rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 /* container child style */
 .box {
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
+  /* margin-top: 1rem; */
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -65,8 +69,8 @@
   align-items: center;
   /* border: 1px solid red; */
   flex-wrap: wrap;
-  flex: 0 1 50%;
-  padding: 5rem;
+  flex: 0 1 auto;
+  padding: 2rem;
 }
 
 #six {
@@ -110,8 +114,8 @@
 /*                                                              START OF Music settings                                 */
 
 kbd {
-  display: block;
-  font-size: 2rem;
+  /* display: block; */
+  /* font-size: 2rem; */
 }
 
 /* when the music is playing */
