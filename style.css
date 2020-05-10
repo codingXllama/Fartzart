@@ -146,7 +146,7 @@ header p {
 
 .icon {
   position: absolute;
-  background-image: url(../images/f2.png);
+  background-image: url(./images/f2.png);
   background-position: center;
   background-repeat: none;
   background-size: cover;
