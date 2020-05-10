@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(rgba(80, 69, 69, 0.481), rgba(53, 42, 42, 0.068)),
-    url("../images/3.jpg");
+    url("./images/3.jpg");
   /* background: url("../images/3.jpg") */
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ header p {
   /* max-height: 90%; */
   width: 100%;
 
-  background-image: url(../images/x.jfif);
+  background-image: url(./images/x.jfif);
   background-position: center;
   background-repeat: none;
   /* background-size: cover; */
@@ -87,7 +87,7 @@ header p {
   height: 100px;
   width: 100px;
   flex: 1;
-  background-image: url(../images/zart.PNG);
+  background-image: url(./images/zart.PNG);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -132,7 +132,7 @@ header p {
 /* Creating the visual display */
 .visual > div {
   position: absolute;
-  background-image: url(../images/1.png);
+  background-image: url(./images/1.png);
   background-position: center;
   background-repeat: none;
   background-size: cover;
