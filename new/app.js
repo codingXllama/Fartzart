@@ -34,9 +34,9 @@ window.addEventListener("load", () => {
   const bubbleCreator = (index) => {
     const bubble = document.createElement("div");
     visual.appendChild(bubble);
-    bubble.style.backgroundColor = colors[index];
+    // bubble.style.backgroundColor = colors[index];
     app.style.backgroundColor = colors[index];
-    bubble.style.animation = "jump 1s ease";
+    bubble.style.animation = "jump 2s ease";
     bubble.addEventListener("animationend", function () {
       visual.removeChild(this);
     });

@@ -1,15 +1,12 @@
 function removeFX(evt) {
-    if (evt.propertyName !== 'transform') return;
-    evt.target.classList.remove("isOn");
-   evt.target.classList.remove("displayBoxImg");
-  }
-
+  if (evt.propertyName !== "transform") return;
+  evt.target.classList.remove("isOn");
+  soundKey.classList.remove("displayBoxImg");
+}
 
 function playFX(evt) {
   // checking if the key pressed is within the key code we have avaliable
-  const myAudio = document.querySelector(
-    `audio[data-key="${evt.keyCode}"]`
-  );
+  const myAudio = document.querySelector(`audio[data-key="${evt.keyCode}"]`);
   const soundKey = document.querySelector(`.box[data-key="${evt.keyCode}"]`);
   if (!myAudio) return;
 
@@ -20,10 +17,8 @@ function playFX(evt) {
   soundKey.classList.add("displayBoxImg");
 }
 
-
-
-
-const fxKeys =  Array.from(document.querySelectorAll('.box'));
-fxKeys.forEach(soundKey => soundKey.addEventListener('transitionend', removeFX));
+const fxKeys = Array.from(document.querySelectorAll(".box"));
+fxKeys.forEach((soundKey) =>
+  soundKey.addEventListener("transitionend", removeFX)
+);
 window.addEventListener("keydown", playFX);
-

@@ -49,21 +49,21 @@ header p {
 }
 
 .img {
-  max-height: 90%;
-  width: 80%;
+  /* max-height: 90%; */
+  width: 100%;
 
-  background-image: url(../images/zart.PNG);
+  background-image: url(../images/x.jfif);
   background-position: center;
   background-repeat: none;
-  background-size: cover;
+  /* background-size: cover; */
   border-radius: 5px 20px 5px;
-  margin-top: 10px;
+  margin: 3px;
 }
 .container {
   display: flex;
   background: rgba(85, 126, 139, 0.452);
   width: 90%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .box {
   min-height: 10vh;
@@ -72,6 +72,15 @@ header p {
   /* border: 2px solid rgb(68, 68, 68); */
   border-radius: 0.25rem;
   transition: all 0.4s ease;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.box p {
+  color: red;
+  margin: 20px;
 }
 
 .displayBoxImg {
@@ -123,27 +132,44 @@ header p {
 /* Creating the visual display */
 .visual > div {
   position: absolute;
-  /* border: 1px solid red; */
+  background-image: url(../images/1.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
   height: 50px;
-  width: 50px;
+  width: 501px;
   border-radius: 50%;
   bottom: 0%;
   left: 20%;
   z-index: -1;
 }
 
+.icon {
+  position: absolute;
+  background-image: url(../images/f2.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  height: 50px;
+  width: 501px;
+  border-radius: 50%;
+  bottom: 0%;
+  left: 20%;
+}
+
 @keyframes jump {
   0% {
     bottom: 0%;
     left: 20%;
+    opacity: 1;
   }
   50% {
     bottom: 50%;
     left: 50%;
   }
+
   100% {
-    bottom: 0%;
-    left: 80%;
+    opacity: 0;
   }
 }
 /* styling the balls */
@@ -161,4 +187,18 @@ header p {
   transform: scale(1.1);
   border-color: transparent;
   box-shadow: 0 0 1rem #000000;
+}
+
+.checkBox {
+  margin-bottom: 20px;
+  /* padding: 101px; */
+}
+
+img .innerImg {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* padding: 30px; */
+  /* max-width: 50px; */
+  /* margin: auto; */
+  /* min-height: 10px; */
 }
