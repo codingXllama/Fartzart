@@ -1,3 +1,9 @@
+function removeFX(evt) {
+    if (evt.propertyName !== 'transform') return;
+    evt.target.classList.remove("isOn");
+   evt.target.classList.remove("displayBoxImg");
+  }
+
 
 function playFX(evt) {
   // checking if the key pressed is within the key code we have avaliable
@@ -11,13 +17,11 @@ function playFX(evt) {
   myAudio.currentTime = 0;
   myAudio.play();
   soundKey.classList.add("isOn");
+  soundKey.classList.add("displayBoxImg");
 }
 
 
-function removeFX(evt) {
-    if (evt.propertyName !== 'transform') return;
-    evt.target.classList.remove("isOn");
-  }
+
 
 const fxKeys =  Array.from(document.querySelectorAll('.box'));
 fxKeys.forEach(soundKey => soundKey.addEventListener('transitionend', removeFX));
